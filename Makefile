@@ -16,5 +16,6 @@ $(TARGET) : $(OBJECT)
 
 clean :
 	rm MPI_RAND.exe
+	rm mpi_random.mod
 	rm -f *.o
 	rm RESULT/*.plt

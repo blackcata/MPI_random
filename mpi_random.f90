@@ -8,8 +8,8 @@ PROGRAM MPI_RAND
     REAL(KIND=8) :: randomnumber
     TYPE(MYMPI) :: mpi_info
 
-    mpi_xsize = 8
-    mpi_ysize = 8
+    mpi_xsize = 4
+    mpi_ysize = 4
 
     nx = 64
     ny = 64
@@ -38,7 +38,7 @@ PROGRAM MPI_RAND
           CALL RANDOM_NUMBER(randomnumber)
 
         IF ( nxl <= i .AND. nxr >=i .AND. nys <=j .AND. nyn >=j ) THEN
-!          WRITE(*,*)  i,j,k, randomnumber
+          WRITE(*,*)  i,j,k, randomnumber
         END IF
 
         END DO
